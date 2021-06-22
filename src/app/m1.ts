@@ -12,6 +12,6 @@ export class M1Component {}
 })
 export class M1Module {
   constructor() {
-    console.log(5);
+    console.log(1);
   }
 }
