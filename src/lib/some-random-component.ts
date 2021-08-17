@@ -1,4 +1,5 @@
-import {Component, NgModule} from "@angular/core";
+import {Component, Input, NgModule} from "@angular/core";
+import {InputType} from "./types";
 
 interface SomeInterface {
   prop: number
@@ -8,7 +9,7 @@ interface SomeInterface {
   template: `hello`
 })
 export class SomeRandomComponent<T extends SomeInterface> {
-
+ @Input() public inputProperty: InputType = 'a';
 }
 
 @NgModule({
